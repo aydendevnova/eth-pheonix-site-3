@@ -1,90 +1,93 @@
-"use client"
+import Image from "next/image"
+import { EmailForm } from "@/components/shared/email-form"
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
+/*
+ * ============================================================
+ * HERO A/B VARIANTS — swap the active variant below.
+ * Only one should be uncommented at a time.
+ * ============================================================
+ */
+
+/* --- VARIANT: BUILDER-FIRST (active) --- */
+const heroContent = {
+  headline: (
+    <>
+      Build.
+      <br />
+      Screen.
+      <br />
+      Ship.
+    </>
+  ),
+  subheadline:
+    "ETH Phoenix brings together Ethereum developers, AI filmmakers, and investors for three days in Phoenix, AZ — September 25–27, 2026.",
+}
+
+/* --- VARIANT: CREATOR-FIRST ---
+const heroContent = {
+  headline: (
+    <>
+      Where Ethereum builders, AI creators, and filmmakers converge.
+    </>
+  ),
+  subheadline:
+    "Three days in Phoenix. One hackathon, one film festival, one pitch competition. September 25–27, 2026.",
+}
+*/
+
+/* --- VARIANT: INVESTOR-FIRST ---
+const heroContent = {
+  headline: (
+    <>
+      The convergence you&apos;ve been looking for.
+    </>
+  ),
+  subheadline:
+    "Blockchain builders, AI film creators, and early-stage founders — together in Phoenix for three days. September 25–27, 2026.",
+}
+*/
+
 
 function Hero() {
-  const [email, setEmail] = useState("")
-  const [status, setStatus] = useState<"idle" | "success" | "error">("idle")
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (!email || !email.includes("@") || !email.includes(".")) {
-      setStatus("error")
-      return
-    }
-    setStatus("success")
-    setEmail("")
-  }
-
   return (
-    <section className="flex min-h-[100vh] flex-col justify-end pb-16 pt-24 lg:pb-24">
-      <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
-        <div className="max-w-4xl">
-          {/* Eyebrow */}
-          <p className="font-heading mb-6 text-sm font-medium tracking-widest text-primary uppercase">
-            September 25–27, 2026 &middot; Phoenix, AZ
+    <section className="relative flex min-h-[90vh] items-center overflow-hidden bg-background">
+      {/* Full-bleed background image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/hero-bg.webp"
+          alt="Atmospheric desert landscape with dramatic sunset lighting over Phoenix, Arizona mountains"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/40" />
+      </div>
+
+      {/* Content — left-aligned, not centered */}
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-32 lg:px-8 lg:py-40">
+        <div className="max-w-2xl">
+          <p className="font-heading text-[11px] uppercase tracking-[0.2em] text-primary">
+            September 25–27, 2026 · Phoenix, Arizona
           </p>
 
-          {/* Statement headline — massive, left-aligned */}
-          <h1 className="font-heading text-6xl leading-[0.95] font-bold tracking-tight text-foreground sm:text-7xl md:text-8xl lg:text-9xl">
-            Build.
-            <br />
-            Screen.
-            <br />
-            Ship.
+          <h1 className="mt-8 font-heading text-6xl font-bold leading-[0.85] tracking-tight text-foreground sm:text-7xl lg:text-[120px]">
+            {heroContent.headline}
           </h1>
 
-          {/* Subheadline */}
-          <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground lg:text-xl">
-            ETH Phoenix brings together Ethereum developers, AI filmmakers, and
-            investors for three days in Phoenix, AZ.
+          <p className="mt-8 max-w-lg text-base leading-relaxed text-muted-foreground lg:text-lg">
+            {heroContent.subheadline}
           </p>
 
-          {/* Email form */}
-          <div id="hero-form" className="mt-10 max-w-md">
-            <form onSubmit={handleSubmit} className="flex gap-3">
-              <Input
-                type="email"
-                placeholder="Your email address"
-                value={email}
-                onChange={(e) => {
-                  setEmail(e.target.value)
-                  if (status !== "idle") setStatus("idle")
-                }}
-                className="h-11 flex-1 bg-card/50 font-body text-base"
-                aria-label="Email address"
-              />
-              <Button
-                type="submit"
-                size="lg"
-                className="h-11 font-heading px-6 text-sm font-semibold tracking-wide"
-              >
-                Get Early Access
-              </Button>
-            </form>
-            {status === "success" && (
-              <p className="mt-3 text-sm text-primary">
-                You&apos;re in. We&apos;ll be in touch as details come together.
-              </p>
-            )}
-            {status === "error" && (
-              <p className="mt-3 text-sm text-destructive">
-                That doesn&apos;t look right — double-check your email address.
-              </p>
-            )}
+          <div className="mt-10 max-w-md" id="get-early-access">
+            <EmailForm />
           </div>
 
-          {/* Secondary CTA */}
-          <div className="mt-6">
-            <a
-              href="mailto:sponsors@ethphoenix.com"
-              className="font-heading text-sm font-medium text-muted-foreground underline underline-offset-4 transition-colors hover:text-foreground"
-            >
-              Become a Sponsor &rarr;
-            </a>
-          </div>
+          <a
+            href="#sponsor"
+            className="mt-4 inline-block py-2 text-[13px] text-muted-foreground underline-offset-4 transition-colors hover:text-foreground hover:underline"
+          >
+            Become a Sponsor →
+          </a>
         </div>
       </div>
     </section>

@@ -1,45 +1,46 @@
-"use client"
-
-import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 function Header() {
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40)
-    window.addEventListener("scroll", onScroll, { passive: true })
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [])
-
-  const scrollToForm = () => {
-    const hero = document.getElementById("hero-form")
-    if (hero) {
-      hero.scrollIntoView({ behavior: "smooth" })
-      const input = hero.querySelector("input")
-      input?.focus()
-    }
-  }
-
   return (
-    <header
-      className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "border-b border-border/50 bg-background/80 backdrop-blur-md"
-          : "bg-transparent"
-      }`}
-    >
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-lg">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
-        <Link href="/" className="font-heading text-lg font-bold tracking-tight text-foreground">
-          ETH Phoenix
-        </Link>
-        <Button
-          size="sm"
-          onClick={scrollToForm}
-          className="font-heading text-xs font-semibold tracking-wide uppercase"
+        <Link
+          href="/"
+          className="font-heading text-lg font-bold tracking-tight text-foreground"
         >
-          Get Early Access
+          ETH PHOENIX
+        </Link>
+
+        <nav
+          className="hidden items-center gap-8 md:flex"
+          aria-label="Main navigation"
+        >
+          <a
+            href="#what-is"
+            className="text-[13px] text-muted-foreground transition-colors hover:text-foreground"
+          >
+            About
+          </a>
+          <a
+            href="#what-to-expect"
+            className="text-[13px] text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Expect
+          </a>
+          <a
+            href="#why-phoenix"
+            className="text-[13px] text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Why Phoenix
+          </a>
+        </nav>
+
+        <Button
+          className="h-10 rounded-full px-5 font-heading text-xs uppercase tracking-wider"
+          asChild
+        >
+          <a href="#get-early-access">Get Early Access</a>
         </Button>
       </div>
     </header>

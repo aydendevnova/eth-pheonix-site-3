@@ -128,6 +128,25 @@
   --sidebar-ring: oklch(0.785 0.155 61.3);
 }
 
+/* Light surface override for contrast sections on dark pages */
+.surface-light {
+  --background: oklch(0.985 0 0);
+  --foreground: oklch(0.218 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.218 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.218 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --primary: oklch(0.738 0.183 54.68);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.969 0.028 79.47);
+  --secondary-foreground: oklch(0.631 0.197 40.25);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.738 0.183 54.68);
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
