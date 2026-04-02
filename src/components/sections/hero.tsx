@@ -70,7 +70,7 @@ function Hero() {
             September 25–27, 2026 · Phoenix, Arizona
           </p>
 
-          <h1 className="mt-8 font-heading text-6xl font-bold leading-[0.85] tracking-tight text-foreground sm:text-7xl lg:text-[120px]">
+          <h1 className="mt-8 font-heading text-6xl font-bold leading-[0.85] tracking-tight text-foreground sm:text-7xl lg:text-[96px] xl:text-[120px]">
             {heroContent.headline}
           </h1>
 
