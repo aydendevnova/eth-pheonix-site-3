@@ -8,7 +8,7 @@ import { EmailForm } from "@/components/shared/email-form"
  * ============================================================
  */
 
-/* --- VARIANT: BUILDER-FIRST (active) --- */
+/* --- VARIANT: BUILDER-FIRST (active) ---
 const heroContent = {
   headline: (
     <>
@@ -22,8 +22,8 @@ const heroContent = {
   subheadline:
     "ETH Phoenix brings together Ethereum developers, AI filmmakers, and investors for three days in Phoenix, AZ — September 25–27, 2026.",
 }
+*/
 
-/* --- VARIANT: CREATOR-FIRST ---
 const heroContent = {
   headline: (
     <>
@@ -33,7 +33,7 @@ const heroContent = {
   subheadline:
     "Three days in Phoenix. One hackathon, one film festival, one pitch competition. September 25–27, 2026.",
 }
-*/
+
 
 /* --- VARIANT: INVESTOR-FIRST ---
 const heroContent = {
@@ -64,13 +64,13 @@ function Hero() {
       </div>
 
       {/* Content — left-aligned, not centered */}
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-32 lg:px-8 lg:py-40">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-24 lg:px-8 lg:py-40">
         <div className="max-w-2xl">
           <p className="font-heading text-[11px] uppercase tracking-[0.2em] text-primary">
             September 25–27, 2026 · Phoenix, Arizona
           </p>
 
-          <h1 className="mt-8 font-heading text-6xl font-bold leading-[0.85] tracking-tight text-foreground sm:text-7xl lg:text-[96px] xl:text-[120px]">
+          <h1 className="mt-8 font-heading text-4xl font-bold leading-[0.85] tracking-tight text-foreground sm:text-5xl lg:text-6xl ">
             {heroContent.headline}
           </h1>
 

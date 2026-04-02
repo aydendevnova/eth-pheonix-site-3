@@ -2,7 +2,7 @@ import Image from "next/image"
 
 function WhatToExpect() {
   return (
-    <section id="what-to-expect" className="bg-muted py-24 lg:py-32">
+    <section id="what-to-expect" className="bg-background py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <p className="font-heading text-[11px] uppercase tracking-[0.2em] text-primary">
           What to Expect
