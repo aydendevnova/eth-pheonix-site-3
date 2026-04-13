@@ -1,4 +1,4 @@
-import { EmailForm } from "@/components/shared/email-form"
+import { KitForm } from "@/components/shared/kit-form"
 
 function ClosingCta() {
   return (
@@ -11,7 +11,7 @@ function ClosingCta() {
           Get Early Access
         </h2>
         <div className="mx-auto mt-10 max-w-md">
-          <EmailForm />
+          <KitForm />
         </div>
       </div>
     </section>

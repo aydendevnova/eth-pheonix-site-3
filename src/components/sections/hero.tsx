@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { EmailForm } from "@/components/shared/email-form"
+import { KitForm } from "@/components/shared/kit-form"
 
 /*
  * ============================================================
@@ -79,7 +79,7 @@ function Hero() {
           </p>
 
           <div className="mt-10 max-w-md" id="get-early-access">
-            <EmailForm />
+            <KitForm />
           </div>
 
           <a
