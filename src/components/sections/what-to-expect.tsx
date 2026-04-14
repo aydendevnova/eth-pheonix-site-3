@@ -29,9 +29,10 @@ function WhatToExpect() {
                 Build
               </h3>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground lg:text-lg">
-                Spend three days deep in a hands-on hackathon — coding against
-                live sponsor bounties, getting mentorship from protocol engineers,
-                and demoing finished work to the people who fund it.
+                Feature: workshop-heavy hackathon with live bounties, protocol
+                mentorship, and structured demo reviews. Benefit: builders leave
+                with shipped progress, clearer technical direction, and direct
+                exposure to partners who can fund or integrate their work.
               </p>
             </div>
           </div>
@@ -48,9 +49,10 @@ function WhatToExpect() {
                 Screen
               </h3>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground lg:text-lg">
-                AI Film 3 brings its festival to Phoenix: original films made with
-                AI tools premiere on the big screen, alongside a creator-led
-                make-a-thon where new work gets made in real time.
+                Feature: AI Film 3 screenings, creator critiques, and live
+                create-a-thon production blocks. Benefit: filmmakers and artists
+                gain visibility, actionable feedback, and direct access to teams
+                building new distribution and monetization rails.
               </p>
             </div>
             <div className="order-1 lg:order-2 lg:col-span-7">
@@ -85,9 +87,10 @@ function WhatToExpect() {
                 Connect
               </h3>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground lg:text-lg">
-                The BitAngels pitch competition puts early-stage founders in front
-                of the angel network that backed Ethereum — structured deal flow,
-                not awkward hallway networking.
+                Feature: BitAngels-vetted pitch flow and curated matchmaking across
+                founders, investors, and strategic operators. Benefit: less random
+                networking, more trust, and more conversations that convert into
+                partnerships, pilots, and investment.
               </p>
             </div>
           </div>

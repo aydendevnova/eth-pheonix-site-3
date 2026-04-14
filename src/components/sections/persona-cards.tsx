@@ -12,12 +12,12 @@ function PersonaCards() {
               Builders
             </p>
             <h3 className="mt-4 font-heading text-lg font-semibold leading-snug text-card-foreground lg:text-xl">
-              Ship projects, win bounties, get funded.
+              Ship faster with real feedback and real upside.
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground lg:text-base">
-              Compete in a hands-on hackathon with sponsor bounties, workshops on
-              L2s, AI agents, and smart contracts, and a direct line to investors
-              looking for their next bet.
+              Pain point: conference panels rarely help you ship. ETH Phoenix gives
+              you sponsor bounties, code-level workshops, and direct demo sessions
+              with mentors and funders so your project leaves prototype mode.
             </p>
           </div>
 
@@ -26,12 +26,12 @@ function PersonaCards() {
               Creators
             </p>
             <h3 className="mt-4 font-heading text-lg font-semibold leading-snug text-card-foreground lg:text-xl">
-              Screen your work. Join the create-a-thon.
+              Turn AI-native work into audience and opportunity.
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground lg:text-base">
-              Submit your AI film to the AI Film 3 festival, get it in front of a
-              real audience, and spend three days making new work alongside artists
-              and toolmakers at the frontier.
+              Pain point: creators struggle to get seen and funded. Screen with AI
+              Film 3, join the create-a-thon, and connect with platforms and teams
+              focused on distribution, rights, and creator monetization.
             </p>
           </div>
 
@@ -41,12 +41,12 @@ function PersonaCards() {
               Investors
             </p>
             <h3 className="mt-4 font-heading text-lg font-semibold leading-snug text-card-foreground lg:text-xl">
-              BitAngels pitches. Curated deal flow.
+              See stronger founders with less sourcing noise.
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground lg:text-base">
-              Access a structured pitch competition vetted by the BitAngels
-              network — the same angel group that backed Ethereum and ShapeShift
-              early — plus a VIP investor track built for serious deal-making.
+              Pain point: most event intros are unqualified. BitAngels-powered
+              screening, structured pitch sessions, and curated networking reduce
+              random outreach and increase high-signal founder conversations.
             </p>
           </div>
 
@@ -55,12 +55,12 @@ function PersonaCards() {
               Newcomers
             </p>
             <h3 className="mt-4 font-heading text-lg font-semibold leading-snug text-card-foreground lg:text-xl">
-              No jargon. No gatekeeping. Start here.
+              Learn the space without feeling behind.
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground lg:text-base">
-              ETH Phoenix has a dedicated newcomer track with mentorship pairing,
-              plain-English workshops, and a free entry tier — so you can show up
-              curious and leave with real context.
+              Pain point: crypto events often feel exclusionary and over-jargoned.
+              Our Start Here track, mentorship pairing, and plain-language sessions
+              give you confidence, context, and a practical first path to contribute.
             </p>
           </div>
         </div>

@@ -27,11 +27,11 @@ const heroContent = {
 const heroContent = {
   headline: (
     <>
-      Where Ethereum builders, AI creators, and filmmakers converge.
+      For people tired of shill-heavy events.
     </>
   ),
   subheadline:
-    "Three days in Phoenix. One hackathon, one film festival, one pitch competition. September 25–27, 2026.",
+    "If you are building products, producing AI-native films, or funding early-stage teams, ETH Phoenix gives you workshops, screenings, and vetted deal flow in one curated room.",
 }
 
 
@@ -70,11 +70,11 @@ function Hero() {
             September 25–27, 2026 · Phoenix, Arizona
           </p>
 
-          <h1 className="mt-8 font-heading text-4xl font-bold leading-[0.85] tracking-tight text-foreground sm:text-5xl lg:text-6xl ">
+          <h1 className="mt-8 font-heading text-4xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl ">
             {heroContent.headline}
           </h1>
 
-          <p className="mt-8 max-w-lg text-base leading-relaxed text-muted-foreground lg:text-lg">
+          <p className="mt-8 max-w-lg text-semibold leading-relaxed text-muted-foreground lg:text-lg">
             {heroContent.subheadline}
           </p>
 

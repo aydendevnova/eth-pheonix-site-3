@@ -6,10 +6,12 @@ function WhatIs() {
           What is ETH Phoenix?
         </p>
         <p className="mt-8 max-w-3xl text-xl leading-relaxed text-foreground lg:text-2xl lg:leading-relaxed">
-          ETH Phoenix is a three-day festival at the intersection of blockchain
-          (the technology behind cryptocurrency), AI, and film. Part hackathon,
-          part film festival, part pitch competition — built in partnership with
-          AI Film 3 and BitAngels. Made for people who make things.
+          ETH Phoenix is a three-day, builder-first festival for four groups:
+          Ethereum developers who want to ship, AI filmmakers who want distribution,
+          investors who want qualified deal flow, and newcomers who want a clear way
+          in. Part hackathon, part film festival, part pitch competition, built with
+          AI Film 3 and BitAngels. The promise is simple: less noise, more progress,
+          and a website tone that feels clear, credible, and welcoming.
         </p>
       </div>
     </section>

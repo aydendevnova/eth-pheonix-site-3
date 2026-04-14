@@ -10,6 +10,10 @@ function ClosingCta() {
         <h2 className="mt-6 font-heading text-5xl font-bold text-foreground lg:text-[64px] lg:leading-[1.05]">
           Get Early Access
         </h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground lg:text-base">
+          Join the list for program drops, speaker announcements, and early ticket
+          release windows by persona track.
+        </p>
         <div className="mx-auto mt-10 max-w-md">
           <KitForm />
         </div>

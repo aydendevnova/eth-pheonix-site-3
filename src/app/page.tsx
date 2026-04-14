@@ -21,7 +21,7 @@ export default function HomePage() {
         <WhatIs />
 
         {/* bg-background — dark */}
-        {/* <PersonaCards /> */}
+        <PersonaCards />
 
         {/* bg-muted — slightly lighter dark */}
         <WhatToExpect />
